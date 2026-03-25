@@ -53,7 +53,18 @@ p {
     font-size: 24px;
 }
 
-button {
+.enviar{
+    height: 40px;
+    width: 200px;
+    background: #C51111;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.cancelar{
     height: 40px;
     width: 200px;
     background: #C51111;
