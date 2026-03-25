@@ -15,7 +15,7 @@
 
     <div class="caixa-video-mario">
         <video src="video.mp4" autoplay muted loop></video>
-        <div class="mascara-video"></div>
+        <div class="mascara-video" onclick="sumirFormulario"></div>
     </div>
 
     <div class="caixa-principal">
@@ -50,8 +50,9 @@
     }
 
     function sumirFormulario(){
-        formulario.style.left = "-320px"
+        formulario.style.left = "-300px"
         mascara.style.visibility = "hidden"
+        formulario.style.transform = "translatex(-50%)"
     }
 
 </script>
