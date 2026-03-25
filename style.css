@@ -76,6 +76,18 @@ button {
     transition: left 1s linear;
     z-index: 4;
 }
+.mascara-form {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px;
+    position: fixed;
+    left: -320px;
+    transition: left 1s linear;
+    z-index: 4;
+}
 
 input {
     height: 40px;
