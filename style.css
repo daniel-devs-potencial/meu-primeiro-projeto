@@ -101,6 +101,8 @@ textarea {
     width: 100vw;
     position: fixed;
     top: 0;
+     center: 50%x;
+    transition: left 1s linear;
     z-index: 3;
     background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
 }
