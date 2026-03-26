@@ -33,7 +33,7 @@
         <input placeholder="Seu nome" type="text" name="nome">
         <input placeholder="Seu telefone" type="tel" name="telefone">
         <textarea placeholder="Digite seu problema aqui" name="info"></textarea>
-        <button class="enviar"  onclick="sumirFormulario()">Enviar formulário</button> 
+        <button class="enviar"  onclick="cancelar()">Enviar formulário</button> 
     </form>
 
     <div class="mascara-form"  ></div>
@@ -54,6 +54,15 @@
       formulario.style.left = "-320px"
         mascara.style.visibility = "hidden"
          formulario.style.transform = "translatex(0)"
+        
+      
+    }
+
+       function cancelar(){
+      formulario.style.left = "-320px"
+        mascara.style.visibility = "hidden"
+         formulario.style.transform = "translatex(0)"
+        
       
     }
 
