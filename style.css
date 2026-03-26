@@ -15,10 +15,13 @@
 
 .logo-mario {
     width: 300px;
+    max-width: 100%;
 }
 
 .imagem-mario-luigi {
     height: 600px;
+    max-height: 80vh;
+    max-width: 100%;
 }
 
 .caixa-principal {
@@ -76,7 +79,8 @@ p {
      z-index: 5;
       top: 10px;
     position: fixed;
-    left: 20%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .fale-conosco {
@@ -87,14 +91,17 @@ p {
     border-radius: 10px;
     gap: 20px;
     position: fixed;
-    left: -320px;
+    left: -400px;
     transition: left 1s linear;
     z-index: 4;
+    width: 90%;
+    max-width: 360px;
 }
  
 
 input {
     height: 40px;
+    width: 100%;
     border-radius: 3px;
     border: 1px solid gray;
     padding-left: 10px;
@@ -103,7 +110,7 @@ input {
 
 textarea {
     height: 90px;
-    width: 300px;
+    width: 100%;
     border-radius: 3px;
     border: 1px solid gray;
     padding: 10px;
@@ -120,12 +127,12 @@ textarea {
     background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
 }
 
-@media(max-width:1100px{
+@media (max-width: 1100px) {
       p {
      display:none;  
       }
     .caixa-mae {
-        flex-direction: colum;
+        flex-direction: column;
         padding: 10px;
     }
     .caixa-principal {
@@ -133,5 +140,39 @@ textarea {
         align-items: center;
         flex-direction: column;
     }
-      
-      )
+}
+
+@media (max-width: 768px) {
+    .caixa-principal {
+        width: 80%;
+    }
+    .logo-mario {
+        width: 220px;
+    }
+    .imagem-mario-luigi {
+        height: 320px;
+    }
+}
+
+@media (max-width: 480px) {
+    .caixa-mae {
+        height: auto;
+        min-height: 100vh;
+        padding: 20px 10px;
+    }
+    .caixa-principal {
+        width: 95%;
+    }
+    .logo-mario {
+        width: 160px;
+    }
+    .imagem-mario-luigi {
+        height: 200px;
+    }
+    .enviar {
+        width: 100%;
+    }
+    .cancelar {
+        width: 90%;
+    }
+}
