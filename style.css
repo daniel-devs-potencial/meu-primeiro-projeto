@@ -234,6 +234,9 @@ textarea {
         font-size: 13px;
         margin-top: 15px;
           margin-left:0px;
+           display: block ;
+        magin-left: auto;
+        margin-right: auto;
     }
     .cancelar {
         width: 140px;
@@ -300,6 +303,9 @@ textarea {
     .enviar {
         width: 120px;
         font-size: 14px;
+        display: block ;
+        magin-left: auto;
+        margin-right: auto;
         
     }
     .cancelar {
