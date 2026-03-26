@@ -69,9 +69,7 @@ p {
     cursor: pointer;
     font-size: 16px;
     transition: background 0.3s;
-       display: block ;
-        magin-left: auto;
-        margin-right: auto;
+     
 }
 
 .enviar:hover {
@@ -112,9 +110,7 @@ p {
     transition: left 1s linear;
     z-index: 4;
     width: 300px;
-       display: block ;
-        magin-left: auto;
-        margin-right: auto;
+     
 }
 
 input {
@@ -224,8 +220,7 @@ textarea {
         width: 95%;
         display: flex;
         align-items: center;
-        flex-direction: column;
-        margin-bottom: 20px;
+        
     }
 
     p {
@@ -240,9 +235,7 @@ textarea {
         font-size: 13px;
         margin-top: 15px;
           margin-left:0px;
-           display: block ;
-        magin-left: auto;
-        margin-right: auto;
+         
     }
     .cancelar {
         width: 140px;
@@ -309,9 +302,7 @@ textarea {
     .enviar {
         width: 120px;
         font-size: 14px;
-        display: block ;
-        magin-left: auto;
-        margin-right: auto;
+        
         
     }
     .cancelar {
