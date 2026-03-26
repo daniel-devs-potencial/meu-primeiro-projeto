@@ -87,14 +87,14 @@ p {
     z-index: 5;
     top: 10px;
     position: fixed;
-    left: 20%;
+     margin-left:5px;
     font-size: 16px;
     transition: background 0.3s;
 }
 
 .cancelar:hover {
     background: #a00a0a;
-    margin-left:5px;
+  
 }
 
 .fale-conosco {
@@ -180,6 +180,7 @@ textarea {
     .cancelar {
         left: 50%;
         transform: translateX(-50%);
+          margin-left:0px;
     }
 
     .fale-conosco {
@@ -227,18 +228,27 @@ textarea {
         margin-top: 15px;
     }
 
-    .enviar,
+    .enviar{
+        width: 140px;
+        height: 32px;
+        font-size: 13px;
+        margin-top: 15px;
+          margin-left:0px;
+    }
     .cancelar {
         width: 140px;
         height: 32px;
         font-size: 13px;
         margin-top: 15px;
+          margin-left:0px;
+        
     }
 
     .cancelar {
         left: 50%;
         transform: translateX(-50%);
         top: 5px;
+          margin-left:0px;
     }
 
     .fale-conosco {
@@ -268,12 +278,12 @@ textarea {
     }
 
     .logo-mario {
-        width: 310px;
+        width: 2200px;
         margin-top: 100px;
     }
 
     .imagem-mario-luigi {
-        height: 310px;
+        height: 300px;
     }
 
     .caixa-principal {
