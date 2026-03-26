@@ -316,6 +316,7 @@ textarea {
         width: 220px;
         padding: 10px;
         gap: 12px;
+        padding: 5px;
     }
 
     input, textarea {
