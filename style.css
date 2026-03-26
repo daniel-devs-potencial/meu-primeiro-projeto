@@ -74,7 +74,8 @@ p {
     margin-top: 20px;
     cursor: pointer;
      z-index: 5;
-    
+      top: 0;
+    position: fixed;
 }
 
 .fale-conosco {
