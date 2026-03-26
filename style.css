@@ -122,9 +122,11 @@ textarea {
 
 @media(max-width:1100px{
       p {
-     display:flex;
-     .
-          
+     display:flex;  
       }
+    .caixa-mae {
+        flex-direction: colum;
+        padding: 10px;
+    }
       
       )
