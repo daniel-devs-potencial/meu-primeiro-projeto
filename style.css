@@ -76,6 +76,7 @@ p {
      z-index: 5;
       top: 20px;
     position: fixed;
+    left: 300px ;
 }
 
 .fale-conosco {
