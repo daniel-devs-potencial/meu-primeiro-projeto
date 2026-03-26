@@ -268,12 +268,12 @@ textarea {
     }
 
     .logo-mario {
-        width: 120px;
-        top: 20px;
+        width: 310px;
+        margin-top: 100px;
     }
 
     .imagem-mario-luigi {
-        height: 220px;
+        height: 310px;
     }
 
     .caixa-principal {
@@ -282,6 +282,8 @@ textarea {
 
     p {
         font-size: 13px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .enviar {
