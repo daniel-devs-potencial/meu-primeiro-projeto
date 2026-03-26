@@ -125,7 +125,7 @@ textarea {
      display:none;  
       }
     .caixa-mae {
-        flex-direction: colum;
+        flex-direction: column;
         padding: 10px;
     }
     .caixa-principal {
