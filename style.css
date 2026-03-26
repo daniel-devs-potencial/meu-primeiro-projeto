@@ -305,6 +305,8 @@ textarea {
     .enviar {
         width: 120px;
         font-size: 14px;
+        margin-right: auto;
+        margin-left: auto;
        
         
         
