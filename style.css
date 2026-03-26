@@ -309,6 +309,7 @@ textarea {
         font-size: 14px;
        margin-left: auto;
         margin-reght: auto;
+        display: block;
         
         
     }
