@@ -70,6 +70,8 @@ p {
     font-size: 16px;
     transition: background 0.3s;
     posiction-left:30px;
+     margin-left: auto;
+        margin-reght: auto;
      
 }
 
@@ -235,7 +237,9 @@ textarea {
         height: 32px;
         font-size: 13px;
         margin-top: 15px;
-          margin-left:0px;
+          
+         margin-left: auto;
+        margin-reght: auto;
          
     }
     .cancelar {
@@ -303,6 +307,8 @@ textarea {
     .enviar {
         width: 120px;
         font-size: 14px;
+       margin-left: auto;
+        margin-reght: auto;
         
         
     }
