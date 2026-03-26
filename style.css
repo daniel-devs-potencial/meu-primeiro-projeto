@@ -112,6 +112,9 @@ p {
     transition: left 1s linear;
     z-index: 4;
     width: 300px;
+       display: block ;
+        magin-left: auto;
+        margin-right: auto;
 }
 
 input {
