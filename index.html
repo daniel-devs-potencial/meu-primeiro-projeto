@@ -36,11 +36,21 @@
         <button class="enviar"   onclick="sumirFormulario()">Enviar formulário</button> 
     </form>
 
-    <div class="mascara-form" onclick="sumirFormulario()"></div>
+       <div class="mascara-form" onclick="sumirFormulario()"></div>
+
+    <!-- Elemento de áudio para o som do clique -->
+    <audio id="som-clique" src="som-clique.mp3"></audio>
 </body>
+
 <script>
     let formulario = document.querySelector(".fale-conosco")
     let mascara = document.querySelector(".mascara-form")
+    let audio = document.getElementById("som-clique")
+
+    function cliqueiNoBotao(){
+        // Toca o som do clique
+        audio.currentTime = 0;
+        audio.play();
    
 
     function cliqueiNoBotao(){
