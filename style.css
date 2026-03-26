@@ -128,5 +128,10 @@ textarea {
         flex-direction: colum;
         padding: 10px;
     }
+    .caixa-principal {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
       
       )
