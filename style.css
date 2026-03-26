@@ -143,6 +143,17 @@ textarea {
 
 /* TABLET (768px a 1099px) */
 @media (max-width: 1099px) {
+    .whatsapp-button {
+        bottom: 15px;
+        right: 15px;
+        width: 55px;
+        height: 55px;
+    }
+
+    .whatsapp-button svg {
+        width: 28px;
+        height: 28px;
+    }
     .caixa-mae {
         flex-direction: column;
         padding: 15px;
@@ -195,6 +206,17 @@ textarea {
 
 /* MOBILE (até 767px) */
 @media (max-width: 767px) {
+    .whatsapp-button {
+        bottom: 10px;
+        right: 10px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .whatsapp-button svg {
+        width: 25px;
+        height: 25px;
+    }
     .caixa-mae {
         flex-direction: column;
         padding: 10px;
@@ -269,6 +291,35 @@ textarea {
     .mascara-form {
         z-index: 2;
     }
+}
+
+/* BOTÃO WHATSAPP FLUTUANTE */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2; /* acima do vídeo, abaixo da máscara do formulário (z-index 3) */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.whatsapp-button svg {
+    width: 30px;
+    height: 30px;
 }
 
 /* CELULAR MUITO PEQUENO (até 480px) */
