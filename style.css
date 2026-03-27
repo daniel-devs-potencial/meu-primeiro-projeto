@@ -166,6 +166,24 @@ textarea {
     transform: scale(1.1);
 }
 
+.header {
+display: flex;
+align-items: center;
+gap: 30px;
+margin: 30px;
+    
+}
+
+.header img {
+height: 60px;
+    
+}
+.header a {
+color: white;
+font-size: 24px;
+    
+}
+
 /* TABLET (768px a 1099px) */
 @media (max-width: 1099px) {
     .caixa-mae {
