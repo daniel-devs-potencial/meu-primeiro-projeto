@@ -5,6 +5,87 @@
     font-family: 'Mukta', sans-serif;
 }
 
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.menu:hover {
+    background-color: #444;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: #ffa500;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .menu ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        background-color: #333;
+        width: 100%;
+        left: 0;
+    }
+
+    .menu.active ul {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* Animation for the hamburger menu */
+.hamburger.active div:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger.active div:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active div:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
 
 
 
