@@ -1,22 +1,4 @@
-// let formulario = document.querySelector(".fale-conosco")
- //   let mascara = document.querySelector(".mascara-form")
-
  
-   
-
- //   function cliqueiNoBotao(){
-     //   formulario.style.left = "50%"
-     //   mascara.style.visibility = "visible"
-      //  formulario.style.transform = "translatex(-50%)"
-//    }
-
- //   function sumirFormulario(){
-  //    formulario.style.left = "-300px"
-    //    mascara.style.visibility = "hidden"
-    //     formulario.style.transform = "translatex(0)"
-        
-  //  }
-
 let formulario = document.querySelector(".fale-conosco")
 let mascara = document.querySelector(".mascara-form")
 
@@ -28,7 +10,7 @@ function cliqueiNoBotao(){
 
 function sumirFormulario(){
     //formulario.style.left = "-300px"//
-    formulario.style.transform = "translateX(100%)"  //  
+    formulario.style.transform = "translateX(0)"  //  
     mascara.style.visibility = "hidden"
 }
 
