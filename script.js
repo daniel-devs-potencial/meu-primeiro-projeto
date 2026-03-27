@@ -1,5 +1,6 @@
  let formulario = document.querySelector(".fale-conosco")
     let mascara = document.querySelector(".mascara-form")
+
  
    
 
@@ -16,12 +17,7 @@
         
     }
 
-       function cancelar(){
-      formulario.style.left = "-320px"
-        mascara.style.visibility = "hidden"
-         formulario.style.transform = "translatex(0)"
-        
-    }
+  
 
   // Menu Hamburger Toggle
 const menuToggle = document.getElementById('menuToggle');
@@ -43,7 +39,10 @@ navLinks.forEach(link => {
 
 // Função do botão Fale Conosco
 function cliqueiNoBotao() {
-    console.log('Botão clicado!');
+    formulario.style.left = "50%"
+        mascara.style.visibility = "visible"
+        formulario.style.transform = "translatex(-50%)"
+  //  console.log('Botão clicado!');
     // Você pode adicionar a lógica aqui (rolar para seção, abrir modal, etc)
 }
 
