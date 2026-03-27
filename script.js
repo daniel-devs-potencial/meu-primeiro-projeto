@@ -9,7 +9,7 @@ function cliqueiNoBotao(){
 }
 
 function sumirFormulario(){
-    formulario.style.left = "-300px"
+    formulario.style.left = "-340px"
     formulario.style.transform = "translateX(0)"  
     mascara.style.visibility = "hidden"
 }
