@@ -9,12 +9,13 @@ html, body {
     padding: 0;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
-    box-sizing: border-box;
+    overflow-y: scroll; /* Permite scroll */
+    scrollbar-width: none; /* Remove barra no Firefox */
 }
 
-* {
-    box-sizing: border-box;
+/* Remove barra no Chrome/Safari */
+html, body::-webkit-scrollbar {
+    display: none;
 }
 
 /* ========================================
