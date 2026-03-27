@@ -12,10 +12,26 @@
 </head>
 
 <body>
-<div class="header">    
-<img src="logo-header.png" alt="logo mario">
-     
-</div>
+<nav class="navbar">
+        <div class="navbar-logo">
+            <a href="#">Brand</a>
+        </div>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+
+    <script src="script.js"></script>
 
     
 <div class="caixa-mae">
@@ -78,6 +94,32 @@
          formulario.style.transform = "translatex(0)"
         
     }
+
+    // script.js
+
+// Hamburger menu toggle functionality
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
+
+// Toggle the hamburger menu
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
+});
+
+// Smooth scroll for anchor links
+const anchorLinks = document.querySelectorAll('a[href^="#"]');
+
+anchorLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        targetSection.scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
 
 </script>
 <a href="https://wa.me/SEU_NUMERO_AQUI" class="whatsapp-link" target="_blank"> 
