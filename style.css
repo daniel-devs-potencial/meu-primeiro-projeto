@@ -171,16 +171,19 @@ display: flex;
 align-items: center;
 gap: 30px;
 margin: 30px;
+position: fixed;
     
 }
 
 .header img {
 height: 60px;
+position: fixed;
     
 }
 .header a {
 color: white;
 font-size: 24px;
+position: fixed;
     
 }
 
