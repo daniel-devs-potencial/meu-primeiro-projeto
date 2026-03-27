@@ -11,7 +11,7 @@
     }
 
     function sumirFormulario(){
-      formulario.style.left = "-320px"
+      formulario.style.left = "-300px"
         mascara.style.visibility = "hidden"
          formulario.style.transform = "translatex(0)"
         
