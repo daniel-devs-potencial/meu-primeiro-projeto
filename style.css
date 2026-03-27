@@ -4,6 +4,18 @@
     box-sizing: border-box;
     font-family: 'Mukta', sans-serif;
 }
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
 
 /* ========================================
    NAVEGAÇÃO E HEADER
