@@ -134,13 +134,18 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+    
+    
+    // Fechar menu ao clicar fora
+    document.addEventListener('click', (e) => {
+        const menuToggleEl = document.getElementById('menuToggle');
+        const navMenuEl = document.getElementById('navMenu');
+        
+        if (menuToggleEl && navMenuEl) {
+            if (!menuToggleEl.contains(e.target) && !navMenuEl.contains(e.target)) {
+                menuToggleEl.classList.remove('active');
+                navMenuEl.classList.remove('active');
+            }
+        }
+    });
 });
-
-// Fechar menu ao clicar fora
-document.addEventListener('click', (e) => {
-    if (!menuToggle.contains(e.target) && !navMenu.contains(e.target)) {
-        menuToggle.classList.remove('active');
-        navMenu.classList.remove('active');
-    }
-});
-
