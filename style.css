@@ -384,7 +384,9 @@ font-size: 24px;
     }
 }
 
-//styles do menu tablate responsivo
+ /* ========================================
+    styles do menu tablate responsivo
+     ========================================*/
     
 .navbar-container {
         padding: 1rem 1.5rem;
@@ -580,7 +582,9 @@ font-size: 24px;
     }
 
     
-    //slyles do menu responsivo
+  /* ========================================
+    slyles do menu responsivo
+      ========================================*/
  .navbar-container {
         padding: 0.75rem 1rem;
     }
