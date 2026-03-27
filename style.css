@@ -1053,49 +1053,7 @@ textarea {
 }
     
 
-
-/*proteção total do site*/
-
-
-/* ========================================
-   PROTEÇÃO - CSS
-   ======================================== */
-
-/* Desabilitar seleção de texto */
-/* {
-   /* -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}*/
-
-/* Permitir seleção apenas em inputs */
-input, textarea, button {
-    -webkit-user-select: text;
-    -moz-user-select: text;
-    -ms-user-select: text;
-    user-select: text;
-}
-
-/* Desabilitar drag de imagens */
-img {
-    -webkit-user-drag: none;
-    -khtml-user-drag: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    pointer-events: none;
-}
-
-/* Desabilitar print */
-@media print {
-    body {
-        display: none;
-    }
-    
-}
-
+ 
 
 
 
