@@ -197,19 +197,7 @@
 
 
 
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100vh;
-    overflow-y: scroll; /* Permite scroll */
-    scrollbar-width: none; /* Remove barra no Firefox */
-}
-
-/* Remove barra no Chrome/Safari */
-html, body::-webkit-scrollbar {
-    display: none;
-}
+ 
 
 /* ========================================
    NAVEGAÇÃO E HEADER
