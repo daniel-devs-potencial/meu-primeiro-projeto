@@ -192,6 +192,11 @@ p {
     line-height: 1.5;
 }
 
+    . h1 {
+
+         color: white; 
+    }
+
 .enviar {
     height: 40px;
     width: 200px;
