@@ -83,40 +83,7 @@
         </a>
     </div>
 
-    <script>
-        // Menu Mobile Toggle
-        const menuToggle = document.getElementById('menuToggle');
-        const navMenu = document.getElementById('navMenu');
-
-        menuToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-            menuToggle.classList.toggle('active');
-        });
-
-        // Fechar menu ao clicar em um link
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                navMenu.classList.remove('active');
-                menuToggle.classList.remove('active');
-            });
-        });
-
-        // Formulário
-        let formulario = document.querySelector(".fale-conosco")
-        let mascara = document.querySelector(".mascara-form")
-
-        function cliqueiNoBotao(){
-            formulario.classList.add('active');
-            mascara.style.visibility = "visible"
-        }
-
-        function sumirFormulario(){
-            formulario.classList.remove('active');
-            mascara.style.visibility = "hidden"
-            navMenu.classList.remove('active');
-            menuToggle.classList.remove('active');
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
