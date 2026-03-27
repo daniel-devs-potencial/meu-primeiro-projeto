@@ -46,6 +46,11 @@ function cliqueiNoBotao() {
     // Você pode adicionar a lógica aqui (rolar para seção, abrir modal, etc)
 }
 
+
+
+
+
+
 // ========================================
 // PROTEÇÃO COMPLETA DO SITE
 // ========================================
