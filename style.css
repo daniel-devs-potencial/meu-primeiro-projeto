@@ -3,11 +3,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Mukta', sans-serif;
+}
 
-
-/* DESKTOP (1100px+) */
-
-  /* ========================================
+/* ========================================
    NAVEGAÇÃO E HEADER
    ======================================== */
 
@@ -49,7 +47,6 @@
     color: #fff;
     letter-spacing: 1px;
 }
-  
 
 /* ========================================
    MENU HAMBURGER
@@ -70,7 +67,6 @@
     transition: all 0.3s ease;
 }
 
-/* Animação do hamburger quando ativo */
 .menu-toggle.active .hamburger:nth-child(1) {
     transform: rotate(45deg) translate(10px, 10px);
 }
@@ -139,8 +135,10 @@
     box-shadow: 0 5px 15px rgba(255, 107, 53, 0.4);
 }
 
+/* ========================================
+   CONTEÚDO PRINCIPAL
+   ======================================== */
 
-    
 .caixa-mae {
     display: flex;
     height: 100vh;
@@ -193,11 +191,10 @@ p {
     line-height: 1.5;
 }
 
-    h1 {
-
-         color: white; 
-        
-    }
+h1 {
+    color: white;
+    font-size: 2rem;
+}
 
 .enviar {
     height: 40px;
@@ -212,9 +209,6 @@ p {
     transition: background 0.3s;
     margin-right: auto;
     margin-left: auto;
-   
-    
-     
 }
 
 .enviar:hover {
@@ -233,16 +227,16 @@ p {
     z-index: 5;
     top: 10px;
     position: fixed;
-     margin-left:0px;
+    margin-left: 0px;
     font-size: 16px;
     transition: background 0.3s;
 }
 
 .cancelar:hover {
     background: #a00a0a;
-  
 }
-      .tex-form {
+
+.tex-form {
     font-size: 1.5rem;
     font-weight: bold;
     color: #000000;
@@ -261,7 +255,6 @@ p {
     transition: left 1s linear;
     z-index: 4;
     width: 300px;
-     
 }
 
 input {
@@ -305,7 +298,7 @@ textarea {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s;
 }
 
@@ -314,31 +307,27 @@ textarea {
 }
 
 .header {
-display: flex;
-align-items: center;
-gap: 20px;
-margin: 30px;
- 
-    
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 30px;
 }
 
 .header img {
-height: 60px;
-position: fixed;
-    
+    height: 60px;
+    position: fixed;
 }
+
 .header a {
-color: white;
-font-size: 24px;
- position: fixed; 
-    
+    color: white;
+    font-size: 24px;
+    position: fixed;
 }
 
+/* ========================================
+   TABLET (768px a 1099px)
+   ======================================== */
 
-
-
-
-/* TABLET (768px a 1099px) */
 @media (max-width: 1099px) {
     .caixa-mae {
         flex-direction: column;
@@ -373,18 +362,15 @@ font-size: 24px;
         font-size: 14px;
         margin-right: auto;
         margin-left: auto;
+    }
 
-        
     .cancelar {
         width: 160px;
         height: 36px;
         font-size: 14px;
-    }
-
-    .cancelar {
         left: 50%;
         transform: translateX(-50%);
-          margin-left:0px;
+        margin-left: 0px;
     }
 
     .fale-conosco {
@@ -395,13 +381,12 @@ font-size: 24px;
     input, textarea {
         font-size: 14px;
     }
-}
 
- /* ========================================
-    styles do menu tablate responsivo
-     ========================================*/
-    
-.navbar-container {
+    /* ========================================
+       MENU RESPONSIVO (TABLET)
+       ======================================== */
+
+    .navbar-container {
         padding: 1rem 1.5rem;
     }
 
@@ -457,9 +442,10 @@ font-size: 24px;
     }
 }
 
-    
-    
-/* MOBILE (até 767px) */
+/* ========================================
+   MOBILE (até 767px)
+   ======================================== */
+
 @media (max-width: 767px) {
     .caixa-mae {
         flex-direction: column;
@@ -467,12 +453,10 @@ font-size: 24px;
         height: auto;
         min-height: 100vh;
         justify-content: flex-start;
-       
     }
 
     .logo-mario {
         width: 250px;
-        
     }
 
     .imagem-mario-luigi {
@@ -484,7 +468,6 @@ font-size: 24px;
         width: 95%;
         display: flex;
         align-items: center;
-        
     }
 
     p {
@@ -493,31 +476,24 @@ font-size: 24px;
         margin-top: 15px;
     }
 
-    .enviar{
+    .enviar {
         width: 140px;
         height: 32px;
         font-size: 13px;
         margin-top: 15px;
         margin-right: auto;
         margin-left: auto;
-          
-         
-         
     }
+
     .cancelar {
         width: 140px;
         height: 32px;
         font-size: 13px;
         margin-top: 15px;
-          margin-left:0px;
-        
-    }
-
-    .cancelar {
         left: 50%;
         transform: translateX(-50%);
         top: 5px;
-          margin-left:0px;
+        margin-left: 0px;
     }
 
     .fale-conosco {
@@ -538,9 +514,83 @@ font-size: 24px;
     .mascara-form {
         z-index: 2;
     }
+
+    /* ========================================
+       MENU RESPONSIVO (MOBILE)
+       ======================================== */
+
+    .navbar-container {
+        padding: 1rem 1.5rem;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #1a1a1a;
+        flex-direction: column;
+        padding: 2rem 0;
+        gap: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-menu.active {
+        max-height: 400px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+
+    .nav-item {
+        width: 100%;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 1rem 2rem;
+        border-bottom: 1px solid #333;
+        border-bottom-color: transparent;
+        font-size: 0.95rem;
+    }
+
+    .nav-link:hover {
+        background-color: #333;
+        border-bottom-color: #ff6b35;
+        padding-left: 2.5rem;
+    }
+
+    .btn-contato-nav {
+        margin: 1rem 2rem;
+        width: calc(100% - 4rem);
+        padding: 0.65rem 1.2rem;
+        font-size: 0.95rem;
+    }
+
+    .logo-img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .logo-text {
+        font-size: 1.2rem;
+    }
 }
 
-/* CELULAR MUITO PEQUENO (até 480px) */
+/* ========================================
+   CELULAR MUITO PEQUENO (até 480px)
+   ======================================== */
+
 @media (max-width: 480px) {
     .caixa-mae {
         padding: 8px;
@@ -549,7 +599,6 @@ font-size: 24px;
     .logo-mario {
         width: 200px;
         padding-top: 30px;
-       
     }
 
     .imagem-mario-luigi {
@@ -565,21 +614,19 @@ font-size: 24px;
         padding-left: 20px;
         padding-right: 20px;
     }
-  h1 {
 
-         color: white; 
-         font-size: 25px;
+    h1 {
+        color: white;
+        font-size: 25px;
     }
+
     .enviar {
         width: 120px;
         font-size: 14px;
         margin-right: auto;
         margin-left: auto;
-       
-        
-        
-        
     }
+
     .cancelar {
         width: 120px;
         font-size: 14px;
@@ -588,20 +635,19 @@ font-size: 24px;
     }
 
     .fale-conosco {
-       width: 220px;
-    padding: 5px;   
-    /*gap: 12px;*/
+        width: 220px;
+        padding: 5px;
     }
 
     input, textarea {
         font-size: 13px;
     }
 
-    
-  /* ========================================
-    slyles do menu responsivo
-      ========================================*/
- .navbar-container {
+    /* ========================================
+       MENU RESPONSIVO (480px)
+       ======================================== */
+
+    .navbar-container {
         padding: 0.75rem 1rem;
     }
 
@@ -620,12 +666,11 @@ font-size: 24px;
     }
 
     .btn-contato-nav {
-        .btn-contato-nav {
         padding: 0.65rem 1.2rem;
-        margin: 0.75rem auto;  
-        width: auto;          
+        margin: 0.75rem auto;
+        width: auto;
         font-size: 0.95rem;
-        display: block;        
+        display: block;
     }
 }
     
