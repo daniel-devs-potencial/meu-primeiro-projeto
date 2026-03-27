@@ -74,13 +74,7 @@ function cliqueiNoBotao() {
 // PROTEÇÃO COMPLETA DO SITE
 // ========================================
 
-let formulario = document.querySelector(".fale-conosco")
-let mascara = document.querySelector(".mascara-form")
-
-// ========================================
-// PROTEÇÃO 1: Desabilitar DevTools
-// ========================================
-
+// Desabilitar DevTools
 document.addEventListener('keydown', (e) => {
     // F12
     if (e.key === 'F12') {
@@ -114,19 +108,13 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-// ========================================
-// PROTEÇÃO 2: Desabilitar Clique Direito
-// ========================================
-
+// Desabilitar Clique Direito
 document.addEventListener('contextmenu', (e) => {
     e.preventDefault();
     return false;
 });
 
-// ========================================
-// PROTEÇÃO 3: Desabilitar Seleção de Texto
-// ========================================
-
+// Desabilitar Seleção de Texto
 document.body.style.userSelect = 'none';
 document.body.style.webkitUserSelect = 'none';
 document.body.style.msUserSelect = 'none';
@@ -138,10 +126,7 @@ document.addEventListener('selectstart', (e) => {
     return false;
 });
 
-// ========================================
-// PROTEÇÃO 4: Desabilitar Drag (Arrastar)
-// ========================================
-
+// Desabilitar Drag (Arrastar)
 document.addEventListener('dragstart', (e) => {
     e.preventDefault();
     return false;
@@ -152,10 +137,7 @@ document.addEventListener('drag', (e) => {
     return false;
 });
 
-// ========================================
-// PROTEÇÃO 5: Desabilitar Copy/Paste
-// ========================================
-
+// Desabilitar Copy/Paste
 document.addEventListener('copy', (e) => {
     e.preventDefault();
     alert('❌ Cópia não permitida!');
@@ -169,27 +151,7 @@ document.addEventListener('cut', (e) => {
     e.preventDefault();
 });
 
-// ========================================
-// PROTEÇÃO 6: Detectar DevTools Aberto
-// ========================================
-
-let devToolsOpen = false;
-
-setInterval(() => {
-    let test = function() {};
-    let result = test.toString().length;
-    
-    if (result > 50 && !devToolsOpen) {
-        devToolsOpen = true;
-        // Redireciona para home ou mostra aviso
-        // window.location.href = '/';
-    }
-}, 500);
-
-// ========================================
-// PROTEÇÃO 7: Desabilitar Atalhos Comuns
-// ========================================
-
+// Desabilitar Atalhos Comuns
 document.addEventListener('keydown', (e) => {
     // Ctrl+U (Ver código fonte)
     if (e.ctrlKey && e.key === 'u') {
@@ -208,22 +170,28 @@ document.addEventListener('keydown', (e) => {
 });
 
 // ========================================
-// SUAS FUNÇÕES ORIGINAIS
+// FUNÇÕES PRINCIPAIS DOS BOTÕES
 // ========================================
 
-function cliqueiNoBotao(){
-    formulario.style.left = "50%"
-    mascara.style.visibility = "visible"
-    formulario.style.transform = "translatex(-50%)"
+let formulario = document.querySelector(".fale-conosco");
+let mascara = document.querySelector(".mascara-form");
+
+function cliqueiNoBotao() {
+    formulario.style.left = "50%";
+    formulario.style.transform = "translateX(-50%)";
+    mascara.style.visibility = "visible";
 }
 
-function sumirFormulario(){
-    formulario.style.left = "-300px"
-    mascara.style.visibility = "hidden"
-    formulario.style.transform = "translatex(0)"
+function sumirFormulario() {
+    formulario.style.left = "-300px";
+    formulario.style.transform = "translateX(0)";
+    mascara.style.visibility = "hidden";
 }
 
-// Menu Hamburger Toggle
+// ========================================
+// MENU HAMBURGER MOBILE
+// ========================================
+
 const menuToggle = document.getElementById('menuToggle');
 const navMenu = document.getElementById('navMenu');
 
