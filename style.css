@@ -49,6 +49,7 @@
     color: #fff;
     letter-spacing: 1px;
 }
+  
 
 /* ========================================
    MENU HAMBURGER
@@ -240,6 +241,12 @@ p {
 .cancelar:hover {
     background: #a00a0a;
   
+}
+      .tex-form {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+    letter-spacing: 1px;
 }
 
 .fale-conosco {
