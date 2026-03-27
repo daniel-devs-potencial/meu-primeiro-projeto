@@ -1,21 +1,40 @@
- let formulario = document.querySelector(".fale-conosco")
-    let mascara = document.querySelector(".mascara-form")
+// let formulario = document.querySelector(".fale-conosco")
+ //   let mascara = document.querySelector(".mascara-form")
 
  
    
 
-    function cliqueiNoBotao(){
-        formulario.style.left = "50%"
-        mascara.style.visibility = "visible"
-        formulario.style.transform = "translatex(-50%)"
-    }
+ //   function cliqueiNoBotao(){
+     //   formulario.style.left = "50%"
+     //   mascara.style.visibility = "visible"
+      //  formulario.style.transform = "translatex(-50%)"
+//    }
 
-    function sumirFormulario(){
-      formulario.style.left = "-300px"
-        mascara.style.visibility = "hidden"
-         formulario.style.transform = "translatex(0)"
+ //   function sumirFormulario(){
+  //    formulario.style.left = "-300px"
+    //    mascara.style.visibility = "hidden"
+    //     formulario.style.transform = "translatex(0)"
         
-    }
+  //  }
+
+let formulario = document.querySelector(".fale-conosco")
+let mascara = document.querySelector(".mascara-form")
+
+function cliqueiNoBotao(){
+    // formulario.style.left = "50%"//
+    formulario.style.transform = "translateX(-50%)"   
+    mascara.style.visibility = "visible"
+}
+
+function sumirFormulario(){
+    //formulario.style.left = "-300px"//
+    formulario.style.transform = "translateX(100%)"  //  
+    mascara.style.visibility = "hidden"
+}
+
+
+
+
 
   
 
