@@ -40,9 +40,7 @@ navLinks.forEach(link => {
 
 // Função do botão Fale Conosco
 function cliqueiNoBotao() {
-    formulario.style.left = "50%"
-        mascara.style.visibility = "visible"
-        formulario.style.transform = "translatex(-50%)"
+   
   //  console.log('Botão clicado!');
     // Você pode adicionar a lógica aqui (rolar para seção, abrir modal, etc)
 }
