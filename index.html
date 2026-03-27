@@ -14,7 +14,7 @@
 </head>
 
 <body>
-      <!-- HEADER COM NAVEGAÇÃO PROFISSIONAL -->
+    <!-- HEADER COM NAVEGAÇÃO PROFISSIONAL -->
     <header class="navbar">
         <div class="navbar-container">
             <!-- Logo -->
@@ -29,7 +29,7 @@
                 <span class="hamburger"></span>
                 <span class="hamburger"></span>
             </div>
-<div>
+
             <!-- Navegação -->
             <nav class="nav-menu" id="navMenu">
                 <ul class="nav-list">
@@ -48,30 +48,6 @@
         <div class="caixa-video-mario" id="inicio">
             <video src="video.mp4" autoplay muted loop></video>
             <div class="mascara-video" onclick="sumirFormulario()"></div>
-
-<!-- Modal de Produtos -->
-<div class="modal-produtos" id="modalProdutos">
-    <div class="modal-content-produtos">
-        <button class="btn-fechar-modal" onclick="fecharModalProdutos()">&times;</button>
-        
-        <h2 class="titulo-modal">Nossos Serviços</h2>
-        
-        <div class="carousel-produtos">
-            <button class="btn-anterior" onclick="anteriorProduto()">❮</button>
-            
-            <div class="slide-produto" id="slideProduto">
-                <!-- Os produtos serão inseridos aqui pelo JavaScript -->
-            </div>
-            
-            <button class="btn-proximo" onclick="proximoProduto()">❯</button>
-        </div>
-        
-        <div class="indicadores-slide" id="indicadores">
-            <!-- Pontos de navegação serão inseridos aqui -->
-        </div>
-    </div>
-</div>
-            
         </div>
 
         <!-- Conteúdo Principal -->
@@ -82,7 +58,10 @@
             <p class="description">Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos entupidos
                 ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia! Apresentamos a
                 vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!</p>
-            <button class="enviar" onclick="cliqueiNoBotao()">Fale conosco</button>        
+            <div class="botoes-principais">
+                <button class="enviar" onclick="cliqueiNoBotao()">Fale conosco</button>
+                <button class="enviar" onclick="abrirModalProdutos()">Ver Serviços</button>
+            </div>
         </div>
 
         <img src="mario.png" alt="logo mario e luigi" class="imagem-mario-luigi">
@@ -91,10 +70,10 @@
         <form class="fale-conosco" action="https://formsubmit.co/bomag61297@rdluxe.com" method="POST">
             <div class="form-header">
                 <h2>Entre em Contato</h2>
-                 <div class="navbar-logo">
-                <img src="logo-header.png" alt="logo mario" class="logo-img">
-                <span class="tex-form">Mario & Luigi</span>
-            </div>
+                <div class="navbar-logo">
+                    <img src="logo-header.png" alt="logo mario" class="logo-img">
+                    <span class="tex-form">Mario & Luigi</span>
+                </div>
             </div>
             <input placeholder="Seu nome" type="text" name="nome" required>
             <input placeholder="Seu telefone" type="tel" name="telefone" required>
@@ -108,6 +87,29 @@
         <a href="https://wa.me/SEU_NUMERO_AQUI" class="whatsapp-link" target="_blank" title="Fale conosco no WhatsApp"> 
             <i class="fab fa-whatsapp"></i>
         </a>
+    </div>
+
+    <!-- Modal de Produtos -->
+    <div class="modal-produtos" id="modalProdutos">
+        <div class="modal-content-produtos">
+            <button class="btn-fechar-modal" onclick="fecharModalProdutos()">&times;</button>
+            
+            <h2 class="titulo-modal">Nossos Serviços</h2>
+            
+            <div class="carousel-produtos">
+                <button class="btn-anterior" onclick="anteriorProduto()">❮</button>
+                
+                <div class="slide-produto" id="slideProduto">
+                    <!-- Os produtos serão inseridos aqui pelo JavaScript -->
+                </div>
+                
+                <button class="btn-proximo" onclick="proximoProduto()">❯</button>
+            </div>
+            
+            <div class="indicadores-slide" id="indicadores">
+                <!-- Pontos de navegação serão inseridos aqui -->
+            </div>
+        </div>
     </div>
 
     <script src="script.js"></script>
