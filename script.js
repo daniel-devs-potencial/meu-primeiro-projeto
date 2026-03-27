@@ -23,29 +23,27 @@
         
     }
 
-    // script.js
+  // Menu Hamburger Toggle
+const menuToggle = document.getElementById('menuToggle');
+const navMenu = document.getElementById('navMenu');
 
-// Hamburger menu toggle functionality
-const hamburger = document.querySelector('.hamburger');
-const navMenu = document.querySelector('.nav-menu');
-
-// Toggle the hamburger menu
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
+menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('active');
     navMenu.classList.toggle('active');
 });
 
-// Smooth scroll for anchor links
-const anchorLinks = document.querySelectorAll('a[href^="#"]');
-
-anchorLinks.forEach(link => {
-    link.addEventListener('click', function(e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href');
-        const targetSection = document.querySelector(targetId);
-        targetSection.scrollIntoView({
-            behavior: 'smooth'
-        });
+// Fechar menu ao clicar em um link
+const navLinks = document.querySelectorAll('.nav-link');
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        menuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
     });
 });
+
+// Função do botão Fale Conosco
+function cliqueiNoBotao() {
+    console.log('Botão clicado!');
+    // Você pode adicionar a lógica aqui (rolar para seção, abrir modal, etc)
+}
 
