@@ -4,8 +4,10 @@
     box-sizing: border-box;
     font-family: 'Mukta', sans-serif;
 
-    
-   /* ========================================
+
+/* DESKTOP (1100px+) */
+
+  /* ========================================
    NAVEGAÇÃO E HEADER
    ======================================== */
 
@@ -136,101 +138,8 @@
     box-shadow: 0 5px 15px rgba(255, 107, 53, 0.4);
 }
 
-/* ========================================
-   RESPONSIVO - TABLET
-   ======================================== */
 
-@media (max-width: 768px) {
-    .navbar-container {
-        padding: 1rem 1.5rem;
-    }
-
-    .menu-toggle {
-        display: flex;
-    }
-
-    .nav-menu {
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        background-color: #1a1a1a;
-        flex-direction: column;
-        padding: 2rem 0;
-        gap: 0;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    }
-
-    .nav-menu.active {
-        max-height: 400px;
-    }
-
-    .nav-list {
-        flex-direction: column;
-        width: 100%;
-        gap: 0;
-    }
-
-    .nav-item {
-        width: 100%;
-    }
-
-    .nav-link {
-        display: block;
-        padding: 1rem 2rem;
-        border-bottom: 1px solid #333;
-        border-bottom-color: transparent;
-    }
-
-    .nav-link:hover {
-        background-color: #333;
-        border-bottom-color: #ff6b35;
-        padding-left: 2.5rem;
-    }
-
-    .btn-contato-nav {
-        margin: 1rem 2rem;
-        width: calc(100% - 4rem);
-    }
-}
-
-/* ========================================
-   RESPONSIVO - MOBILE
-   ======================================== */
-
-@media (max-width: 480px) {
-    .navbar-container {
-        padding: 0.75rem 1rem;
-    }
-
-    .logo-img {
-        width: 35px;
-        height: 35px;
-    }
-
-    .logo-text {
-        font-size: 1.2rem;
-    }
-
-    .nav-link {
-        padding: 0.75rem 1.5rem;
-        font-size: 0.95rem;
-    }
-
-    .btn-contato-nav {
-        padding: 0.65rem 1.2rem;
-        margin: 0.75rem 1.5rem;
-        width: calc(100% - 3rem);
-        font-size: 0.95rem;
-    }
-}
-
-
-
-/* DESKTOP (1100px+) */
+    
 .caixa-mae {
     display: flex;
     height: 100vh;
@@ -475,7 +384,65 @@ font-size: 24px;
     }
 }
 
+//styles do menu tablate responsivo
+    
+.navbar-container {
+        padding: 1rem 1.5rem;
+    }
 
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #1a1a1a;
+        flex-direction: column;
+        padding: 2rem 0;
+        gap: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-menu.active {
+        max-height: 400px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+
+    .nav-item {
+        width: 100%;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 1rem 2rem;
+        border-bottom: 1px solid #333;
+        border-bottom-color: transparent;
+    }
+
+    .nav-link:hover {
+        background-color: #333;
+        border-bottom-color: #ff6b35;
+        padding-left: 2.5rem;
+    }
+
+    .btn-contato-nav {
+        margin: 1rem 2rem;
+        width: calc(100% - 4rem);
+    }
+}
+
+    
     
 /* MOBILE (até 767px) */
 @media (max-width: 767px) {
@@ -611,4 +578,33 @@ font-size: 24px;
     input, textarea {
         font-size: 13px;
     }
+
+    
+    //slyles do menu responsivo
+ .navbar-container {
+        padding: 0.75rem 1rem;
+    }
+
+    .logo-img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .logo-text {
+        font-size: 1.2rem;
+    }
+
+    .nav-link {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.95rem;
+    }
+
+    .btn-contato-nav {
+        padding: 0.65rem 1.2rem;
+        margin: 0.75rem 1.5rem;
+        width: calc(100% - 3rem);
+        font-size: 0.95rem;
+    }
+}
+    
 }
