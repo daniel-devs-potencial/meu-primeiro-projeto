@@ -1,4 +1,4 @@
- let formulario;
+let formulario;
 let mascara;
 
 const produtos = [
