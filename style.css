@@ -330,7 +330,7 @@ h1{
 .mascara-form[style*="visible"],
 .mascara-form.visible{
   visibility: visible;
-  opacity: 1;
+  opacity: 2;
 }
 
 /* ================================
@@ -365,7 +365,7 @@ h1{
   :root{ --container: 980px; }
 
   .caixa-principal{
-    grid-template-columns: 1fr;
+   /* grid-template-columns: 1fr;*/
     padding-bottom: 280px; /* espaço pro Mario embaixo */
   }
 
