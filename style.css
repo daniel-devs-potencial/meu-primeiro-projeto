@@ -1,6 +1,0 @@
-@media (max-width: 480px) {
-  .caixa-video-mario video {
-    transform: scale(1.2);
-    object-position: center;
-  }
-}
