@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -14,7 +13,6 @@
 </head>
 
 <body>
-    <header>
     <!-- HEADER COM NAVEGAÇÃO PROFISSIONAL -->
     <header class="navbar">
         <div class="navbar-container">
@@ -43,10 +41,10 @@
             </nav>
         </div>
     </header>
- 
+
     <div class="caixa-mae">
         <!-- Vídeo de Fundo -->
-        <div class="caixa-video-mario" id="inicio" >
+        <div class="caixa-video-mario" id="inicio">
             <video src="video.mp4" autoplay muted loop></video>
             <div class="mascara-video" onclick="sumirFormulario()"></div>
         </div>
@@ -56,12 +54,13 @@
             <img src="logo.png" alt="logo do super mario" class="logo-mario">
             <h1>Encanadores Mario & Luigi</h1>
             <p class="subtitle">Resolvendo Seus Problemas Com Estilo!</p>
-            <p class="description">Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos entupidos
+            <p class="description">
+                Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos entupidos
                 ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia! Apresentamos a
-                vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!</p>
+                vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!
+            </p>
             <div class="botoes-principais">
                 <button class="enviar" onclick="cliqueiNoBotao()">Fale conosco</button>
-                 
             </div>
         </div>
 
@@ -73,6 +72,26 @@
                 <h2>Entre em Contato</h2>
                 <div class="navbar-logo">
                     <img src="logo-header.png" alt="logo mario" class="logo-img">
+                    <span class="tex-form">Mario & Luigi</span>
+                </div>
+            </div>
+            <input placeholder="Seu nome" type="text" name="nome" required>
+            <input placeholder="Seu telefone" type="tel" name="telefone" required>
+            <textarea placeholder="Digite seu problema aqui" name="info" required></textarea>
+            <button class="enviar" type="submit">Enviar formulário</button>
+        </form>
+
+        <div class="mascara-form" onclick="sumirFormulario()"></div>
+
+        <!-- Link WhatsApp -->
+        <a href="https://wa.me/SEU_NUMERO_AQUI" class="whatsapp-link" target="_blank" title="Fale conosco no WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
                     <span class="tex-form">Mario & Luigi</span>
                 </div>
             </div>
