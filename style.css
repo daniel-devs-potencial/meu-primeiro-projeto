@@ -367,6 +367,7 @@ h1{
   .caixa-principal{
    /* grid-template-columns: 1fr;*/
     padding-bottom: 280px; /* espaço pro Mario embaixo */
+    display: inline;
   }
 
   .imagem-mario-luigi{
