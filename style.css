@@ -1,0 +1,496 @@
+/* ================================
+   Mario & Luigi - Responsive Theme
+   Author: (generated)
+   Breakpoints:
+   - <= 1024px (tablet)
+   - <= 768px  (mobile)
+   - <= 480px  (small mobile)
+================================ */
+
+:root{
+  --bg: #0b1020;                /* azul bem escuro */
+  --surface: rgba(255,255,255,.08);
+  --surface-strong: rgba(255,255,255,.12);
+  --text: #f6f7fb;
+  --muted: rgba(246,247,251,.78);
+
+  --red: #e63946;
+  --blue: #1d4ed8;
+  --yellow: #fbbf24;
+
+  --shadow: 0 14px 40px rgba(0,0,0,.45);
+  --radius: 16px;
+
+  --container: 1100px;
+  --nav-h: 70px;
+}
+
+*{ box-sizing: border-box; }
+html, body{ height: 100%; }
+body{
+  margin: 0;
+  font-family: "Mukta", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: radial-gradient(1200px 600px at 20% 10%, rgba(29,78,216,.35), transparent 55%),
+              radial-gradient(900px 500px at 80% 20%, rgba(230,57,70,.28), transparent 60%),
+              radial-gradient(800px 500px at 60% 90%, rgba(251,191,36,.22), transparent 60%),
+              var(--bg);
+  overflow-x: hidden;
+}
+
+img, video{ max-width: 100%; display:block; }
+a{ color: inherit; text-decoration: none; }
+button{ font: inherit; cursor: pointer; }
+
+/* ================================
+   Navbar
+================================ */
+.navbar{
+  position: fixed;
+  inset: 0 0 auto 0;
+  height: var(--nav-h);
+  z-index: 50;
+  background: rgba(11,16,32,.72);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,.10);
+}
+
+.navbar-container{
+  max-width: var(--container);
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.navbar-logo{
+  display:flex;
+  align-items:center;
+  gap: 10px;
+  user-select: none;
+}
+.logo-img{
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,.35));
+}
+.logo-text{
+  font-weight: 700;
+  letter-spacing: .2px;
+}
+.tex-form{
+  font-weight: 700;
+  letter-spacing: .2px;
+}
+
+/* Menu */
+.nav-menu{
+  display:flex;
+  align-items:center;
+  gap: 14px;
+}
+
+.nav-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display:flex;
+  align-items:center;
+  gap: 10px;
+}
+
+.nav-link{
+  display:inline-flex;
+  align-items:center;
+  padding: 10px 12px;
+  border-radius: 12px;
+  color: var(--muted);
+  transition: background .2s ease, color .2s ease, transform .2s ease;
+}
+.nav-link:hover{
+  background: rgba(255,255,255,.09);
+  color: var(--text);
+  transform: translateY(-1px);
+}
+
+.btn-contato-nav{
+  border: 0;
+  padding: 10px 14px;
+  border-radius: 14px;
+  color: #111827;
+  background: linear-gradient(135deg, var(--yellow), #ffd56a);
+  box-shadow: 0 10px 20px rgba(251,191,36,.22);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.btn-contato-nav:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 16px 26px rgba(251,191,36,.28);
+}
+
+/* Hamburger */
+.menu-toggle{
+  width: 44px;
+  height: 44px;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.06);
+}
+.hamburger{
+  display:block;
+  width: 20px;
+  height: 2px;
+  background: rgba(246,247,251,.92);
+  border-radius: 2px;
+  position: relative;
+}
+.hamburger + .hamburger{ margin-top: 5px; }
+
+.menu-toggle.active{
+  border-color: rgba(251,191,36,.35);
+  box-shadow: 0 10px 26px rgba(0,0,0,.22);
+}
+
+/* ================================
+   Layout Base
+================================ */
+.caixa-mae{
+  min-height: 100vh;
+  padding-top: calc(var(--nav-h) + 26px);
+  position: relative;
+}
+
+/* Background video area */
+.caixa-video-mario{
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+.caixa-video-mario video{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(1.1) contrast(1.05);
+  transform: scale(1.03);
+}
+
+/* dark overlay */
+.mascara-video{
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(11,16,32,.35), rgba(11,16,32,.80) 65%, rgba(11,16,32,.92));
+}
+
+/* Main content wrapper (hero) */
+.caixa-principal{
+  position: relative;
+  z-index: 1;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 34px 18px 40px;
+  display: grid;
+  grid-template-columns: 1.15fr .85fr;
+  align-items: center;
+  gap: 28px;
+}
+
+/* Logo hero */
+.logo-mario{
+  width: 150px;
+  height: auto;
+  margin-bottom: 14px;
+  filter: drop-shadow(0 18px 26px rgba(0,0,0,.45));
+}
+
+h1{
+  margin: 0 0 8px 0;
+  font-size: clamp(28px, 3.2vw, 44px);
+  line-height: 1.08;
+  letter-spacing: .2px;
+}
+.subtitle{
+  margin: 0 0 12px 0;
+  color: rgba(251,191,36,.95);
+  font-weight: 700;
+}
+.description{
+  margin: 0 0 20px 0;
+  max-width: 62ch;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+/* Buttons */
+.botoes-principais{
+  display:flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.enviar{
+  border: 0;
+  padding: 12px 16px;
+  border-radius: 14px;
+  color: var(--text);
+  background: linear-gradient(135deg, var(--red), #ff5964);
+  box-shadow: 0 16px 34px rgba(230,57,70,.18);
+  transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
+}
+.enviar:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 22px 40px rgba(230,57,70,.22);
+  filter: saturate(1.05);
+}
+
+/* Right side character image */
+.imagem-mario-luigi{
+  position: absolute;
+  right: max(18px, calc((100vw - var(--container))/2));
+  bottom: 0;
+  z-index: 1;
+  width: min(430px, 42vw);
+  filter: drop-shadow(0 28px 46px rgba(0,0,0,.55));
+  pointer-events: none;
+}
+
+/* ================================
+   Contact Form (slide-in)
+================================ */
+.fale-conosco{
+  position: fixed;
+  top: calc(var(--nav-h) + 16px);
+  left: -420px;                /* hidden */
+  z-index: 60;
+  width: min(380px, calc(100vw - 32px));
+  max-height: calc(100vh - var(--nav-h) - 32px);
+  overflow: auto;
+
+  padding: 18px;
+  border-radius: var(--radius);
+  background: rgba(11,16,32,.88);
+  border: 1px solid rgba(255,255,255,.12);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+
+  transition: left .28s ease, transform .28s ease;
+}
+
+.form-header{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+.form-header h2{
+  margin: 0;
+  font-size: 20px;
+}
+
+.fale-conosco input,
+.fale-conosco textarea{
+  width: 100%;
+  padding: 12px 12px;
+  margin-top: 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.06);
+  color: var(--text);
+  outline: none;
+}
+.fale-conosco textarea{
+  min-height: 120px;
+  resize: vertical;
+}
+.fale-conosco input::placeholder,
+.fale-conosco textarea::placeholder{
+  color: rgba(246,247,251,.62);
+}
+
+.mascara-form{
+  position: fixed;
+  inset: 0;
+  z-index: 55;
+  visibility: hidden;
+  opacity: 0;
+  background: rgba(0,0,0,.55);
+  transition: opacity .2s ease, visibility .2s ease;
+}
+
+/* JS toggles visibility on .mascara-form and moves form to 50% */
+.mascara-form[style*="visible"],
+.mascara-form.visible{
+  visibility: visible;
+  opacity: 1;
+}
+
+/* ================================
+   WhatsApp Button
+================================ */
+.whatsapp-link{
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 70;
+
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: #06130b;
+  box-shadow: 0 18px 34px rgba(0,0,0,.38);
+  border: 1px solid rgba(255,255,255,.12);
+}
+.whatsapp-link i{
+  font-size: 28px;
+  color: #052e16;
+}
+
+/* ================================
+   Tablet <= 1024px
+================================ */
+@media (max-width: 1024px){
+  :root{ --container: 980px; }
+
+  .caixa-principal{
+    grid-template-columns: 1fr;
+    padding-bottom: 280px; /* espaço pro Mario embaixo */
+  }
+
+  .imagem-mario-luigi{
+    width: min(380px, 56vw);
+    right: 18px;
+    bottom: -8px;
+  }
+}
+
+/* ================================
+   Mobile <= 768px
+================================ */
+@media (max-width: 768px){
+  .menu-toggle{ display:flex; }
+
+  /* Transformar nav em dropdown */
+  .nav-menu{
+    position: absolute;
+    top: var(--nav-h);
+    left: 0;
+    width: 100%;
+    background: rgba(11,16,32,.92);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,255,255,.10);
+
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .26s ease, padding .26s ease;
+  }
+
+  .nav-menu.active{
+    max-height: 420px;
+    padding: 14px 14px 18px;
+  }
+
+  .nav-list{
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+  }
+  .nav-link{
+    width: 100%;
+    padding: 12px 12px;
+  }
+
+  .btn-contato-nav{
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .logo-text{ font-size: 15px; }
+
+  .caixa-principal{
+    padding-top: 22px;
+    padding-bottom: 310px;
+  }
+
+  .logo-mario{ width: 130px; }
+
+  .imagem-mario-luigi{
+    width: min(340px, 70vw);
+    right: 10px;
+    bottom: -10px;
+  }
+
+  .fale-conosco{
+    top: calc(var(--nav-h) + 12px);
+    width: min(380px, calc(100vw - 24px));
+  }
+
+  .whatsapp-link{
+    width: 52px;
+    height: 52px;
+    right: 14px;
+    bottom: 14px;
+  }
+}
+
+/* ================================
+   Small Mobile <= 480px
+================================ */
+@media (max-width: 480px){
+  .navbar-container{ padding: 0 12px; }
+
+  h1{ font-size: 28px; }
+  .description{ font-size: 15px; }
+
+  /* centraliza o conteúdo */
+  .caixa-principal{
+    padding-left: 12px;
+    padding-right: 12px;
+
+    justify-items: center;   /* centraliza itens do grid */
+    text-align: center;      /* centraliza textos */
+
+    padding-bottom: 360px;   /* espaço extra pra imagem maior */
+  }
+
+  .botoes-principais{
+    justify-content: center; /* centraliza botões */
+  }
+
+  .description{
+    max-width: 36ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* centraliza e aumenta a imagem */
+  .imagem-mario-luigi{
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    width: min(360px, 92vw);
+    bottom: -18px;
+  }
+
+  .enviar,
+  .btn-contato-nav{
+    border-radius: 12px;
+  }
+}
