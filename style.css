@@ -493,4 +493,7 @@ h1{
   .btn-contato-nav{
     border-radius: 12px;
   }
+   @media (max-width: 480px){
+  ...
+}
 }
