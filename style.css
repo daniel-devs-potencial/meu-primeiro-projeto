@@ -365,7 +365,7 @@ h1{
   :root{ --container: 980px; }
 
   .caixa-principal{
-   /* grid-template-columns: 1fr;*/
+    grid-template-columns: 1fr;
     padding-bottom: 280px; /* espaço pro Mario embaixo */
     display: inline;
   }
