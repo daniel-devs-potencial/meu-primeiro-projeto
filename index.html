@@ -1,101 +1,23 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome para ícones -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>Super Mario - Encanadores Profissionais</title>
-</head>
+<!-- Vídeo de Fundo -->
+<div class="caixa-video-mario" id="inicio">
+  <video
+    src="video.mp4"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="metadata"
+    tabindex="-1"
+    aria-hidden="true"
+  ></video>
 
-<body>
-    <!-- HEADER COM NAVEGAÇÃO PROFISSIONAL -->
-    <header class="navbar">
-        <div class="navbar-container">
-            <!-- Logo -->
-            <div class="navbar-logo">
-                <img src="logo-header.png" alt="logo mario" class="logo-img">
-                <span class="logo-text">Mario & Luigi</span>
-            </div>
-
-            <!-- Menu Hamburger para Mobile -->
-            <div class="menu-toggle" id="menuToggle">
-                <span class="hamburger"></span>
-                <span class="hamburger"></span>
-                <span class="hamburger"></span>
-            </div>
-
-            <!-- Navegação -->
-            <nav class="nav-menu" id="navMenu">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="#inicio" class="nav-link">Início</a></li>
-                    <li class="nav-item"><a href="#servicos" class="nav-link">Serviços</a></li>
-                    <li class="nav-item"><a href="#sobre" class="nav-link">Sobre Nós</a></li>
-                    <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
-                </ul>
-                <button class="btn-contato-nav" onclick="cliqueiNoBotao()">Fale Conosco</button>
-            </nav>
-        </div>
-    </header>
-
-    <div class="caixa-mae">
-        <!-- Vídeo de Fundo -->
-        <div class="caixa-video-mario" id="inicio">
-            <video src="video.mp4" autoplay muted loop></video>
-            <div class="mascara-video" onclick="sumirFormulario()"></div>
-        </div>
-
-        <!-- Conteúdo Principal -->
-        <div class="caixa-principal">
-            <img src="logo.png" alt="logo do super mario" class="logo-mario">
-            <h1>Encanadores Mario & Luigi</h1>
-            <p class="subtitle">Resolvendo Seus Problemas Com Estilo!</p>
-            
-                <div class="desc-com-mario">
-                    
-  <img src="mario.png" alt="logo mario e luigi" class="imagem-mario-luigi">
-  <p class="description">
-    Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos entupidos
-    ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia! Apresentamos a
-    vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!
-  </p>
-
+  <div
+    class="mascara-video"
+    onclick="sumirFormulario()"
+    aria-label="Fechar formulário"
+    role="button"
+    tabindex="0"
+    onkeydown="if(event.key==='Enter' || event.key===' '){ sumirFormulario(); }"
+  ></div>
 </div>
-            <div class="botoes-principais">
-                <button class="enviar" onclick="cliqueiNoBotao()">Fale conosco</button>
-            </div>
-        </div>
-
-        
-
-        <!-- Formulário de Contato -->
-        <form class="fale-conosco" action="https://formsubmit.co/bomag61297@rdluxe.com" method="POST">
-            <div class="form-header">
-                <h2>Entre em Contato</h2>
-                <div class="navbar-logo">
-                    <img src="logo-header.png" alt="logo mario" class="logo-img">
-                    <span class="tex-form">Mario & Luigi</span>
-                </div>
-            </div>
-            <input placeholder="Seu nome" type="text" name="nome" required>
-            <input placeholder="Seu telefone" type="tel" name="telefone" required>
-            <textarea placeholder="Digite seu problema aqui" name="info" required></textarea>
-            <button class="enviar" type="submit">Enviar formulário</button>
-        </form>
-
-        <div class="mascara-form" onclick="sumirFormulario()"></div>
-
-        <!-- Link WhatsApp -->
-        <a href="https://wa.me/SEU_NUMERO_AQUI" class="whatsapp-link" target="_blank" title="Fale conosco no WhatsApp">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-    </div>
-
-    <script src="script.js" defer></script>
-</body>
-</html>
                     
