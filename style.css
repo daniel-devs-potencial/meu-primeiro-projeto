@@ -168,13 +168,13 @@ button{ font: inherit; cursor: pointer; }
 
 /* Background video area */
 .caixa-video-mario{
-  position: flex;
+  position: absolute;
   inset: 0;
   z-index: 0;
   overflow: hidden;
 }
 .caixa-video-mario video{
-  position: flex;
+  position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
@@ -484,6 +484,21 @@ h1{
     margin-left: auto;
     margin-right: auto;
   }
+   .caixa-video-mario{
+  position: flex;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+.caixa-video-mario video{
+  position: flex;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(1.1) contrast(1.05);
+  transform: scale(1.03);
+}
 
   /* centraliza e aumenta a imagem */
   .imagem-mario-luigi{
