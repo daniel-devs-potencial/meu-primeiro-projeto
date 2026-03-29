@@ -330,7 +330,7 @@ h1{
 .mascara-form[style*="visible"],
 .mascara-form.visible{
   visibility: visible;
-  opacity: 2;
+  opacity: 1;
 }
 
 /* ================================
@@ -367,7 +367,7 @@ h1{
   .caixa-principal{
     grid-template-columns: 1fr;
     padding-bottom: 280px; /* espaço pro Mario embaixo */
-    display: inline;
+    
   }
 
   .imagem-mario-luigi{
@@ -437,12 +437,7 @@ h1{
     right: 10px;
     bottom: -10px;
   }
-.caixa-video-mario{
-  position: flex;
-}
-.caixa-video-mario video{
-  position: flex;
-}
+
    
    .logo-mario{
   width: 320px;
@@ -492,12 +487,7 @@ h1{
     margin-left: auto;
     margin-right: auto;
   }
-   .caixa-video-mario{
-  position: flex;
-}
-.caixa-video-mario video{
-  position: flex;
-}
+   
 
   /* centraliza e aumenta a imagem */
   .imagem-mario-luigi{
