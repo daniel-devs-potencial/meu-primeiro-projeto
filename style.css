@@ -506,7 +506,10 @@ h1{
 
 }
 
-  .enviar,
+  .enviar {
+
+     display: none;
+  }
   .btn-contato-nav{
     border-radius: 12px;
   }
