@@ -223,6 +223,7 @@ h1{
   font-weight: 700;
 }
 .description{
+   display: inline;
   margin: 0 0 20px 0;
   max-width: 62ch;
   color: var(--muted);
@@ -483,10 +484,10 @@ h1{
   }
 
   .description{
-     display: none;
-    max-width: 26ch;
-    margin-left: auto;
-    margin-right: auto;
+   display: inline;
+   max-width: 26ch;
+   margin-left: auto;
+   margin-right: auto;
   }
    
 
