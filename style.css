@@ -251,6 +251,8 @@ h1{
    .enviar {
 padding-left: auto;
 padding-right: auto;
+transform: translateY(-1px);
+ box-shadow: 0 22px 40px rgba(230,57,70,.22); filter: saturate(1.05);
 }
    
 .enviar1:hover{
