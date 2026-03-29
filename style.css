@@ -526,6 +526,7 @@ transform: translateY(-1px);
       display: none;
    }
   .enviar {
+     display: block;
 padding-left: auto;
 padding-right: auto;
      
