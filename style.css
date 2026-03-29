@@ -480,6 +480,7 @@ h1{
   }
 
   .botoes-principais{
+     display: none;
     justify-content: center; /* centraliza botões */
   }
 
