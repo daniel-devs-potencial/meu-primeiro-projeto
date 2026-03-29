@@ -246,6 +246,13 @@ h1{
   box-shadow: 0 16px 34px rgba(230,57,70,.18);
   transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
 }
+
+   
+   .enviar {
+padding-left: auto;
+padding-right: auto;
+}
+   
 .enviar:hover{
   transform: translateY(-1px);
   box-shadow: 0 22px 40px rgba(230,57,70,.22);
