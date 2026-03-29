@@ -253,7 +253,7 @@ padding-left: auto;
 padding-right: auto;
 }
    
-.enviar:hover{
+.enviar1:hover{
   transform: translateY(-1px);
   box-shadow: 0 22px 40px rgba(230,57,70,.22);
   filter: saturate(1.05);
